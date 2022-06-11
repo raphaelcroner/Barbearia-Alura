@@ -24,39 +24,39 @@
     <main>
         <form>
             <label for="nomesobrenome">Nome e Sobrenome</label>
-            <input type="text" id="nomesobrenome" class="inputPadrao">
+            <input type="text" id="nomesobrenome" class="inputPadrao" required placeholder="nome completo">
 
             <label for="email">Email</label>
-            <input type="email" id="email"class="inputPadrao">
+            <input type="email" id="email"class="inputPadrao" required placeholder="seuemail@dominio.com">
 
             <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone"class="inputPadrao">
+            <input type="tel" id="telefone"class="inputPadrao" required placeholder="(xx)xxxxx-xxxx">
 
             <label for="mensagem">Mensagem</label>
-            <textarea cols="70" rows="10" id="mensagem"class="inputPadrao"></textarea>
+            <textarea cols="70" rows="10" id="mensagem"class="inputPadrao" required></textarea>
 
-            <div>
-                <p>Como prefere o nosso contato?</p>
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
                 <label><input type="radio" name="contato" value="email">Email</label>
                 
                 <label><input type="radio" name="contato" value="telefone">Telefone</label>
                 
-                <label><input type="radio" name="contato" value="whatsapp">WhasApp</label>
+                <label><input type="radio" name="contato" value="whatsapp" checked>WhasApp</label>
                 
-            </div>
+            </fieldset>
 
-            <div>
-                <p>Qual horário prefere ser atendido?</p>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
                 <select>
                     <option>Manhã</option>
                     <option>Tarde</option>
                     <option>Noite</option>
                 </select>
-            </div>
+            </fieldset>
 
-            <label><input type="checkbox"class="checkbox"> Gostaria de receber novidades por email?</label>
+            <label><input type="checkbox"class="checkbox" checked> Gostaria de receber novidades por email?</label>
 
-            <input type="submit" value="Enviar Formulário">
+            <input type="submit" value="Enviar Formulário" class="enviar">
         </form>
     </main>
     <footer>
